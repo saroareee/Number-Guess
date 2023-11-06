@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="sky">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+      <h1 class="title">Player 1</h1>
+      <h3 class="d-none chance">Remaining Chance: <span></span></h3>
+      <div class="d-flex">
+        
+      <input class="oneinput" type="password" placeholder="Namta Number" />
+      <button class="btn btn-primary onebutton ms-2">Start</button>
+      <input id="clear"
+        class="oneinput2 d-none"
+        type="text"
+        placeholder="Guess the number"
+      />
+      <button class="btn btn-primary onebutton2 d-none ms-2" >Guess</button>
+      <input id="clear1"
+        class="oneinput3 d-none"
+        type="text"
+        placeholder="Guess the number"
+      />
+      <button class="btn btn-primary onebutton3 d-none ms-2">Guess</button>
+      <div class="mt-2 rounded-pill move d-none d-flex justify-content-center align-items-center flex-column" >
+        <h2 class="fw-bolder">Congratulations</h2>
+        <h1 class="result text-white border border-5 border-primary rounded-pill d-inline p-2 mt-4"></h1>
+      </div>
+      
+      </div>
+      <h6 class="alert alert-danger mt-2 d-none error type" role="alert">Input is empty</h6>
+      <div class="alert alert-danger mt-2 d-none error1 type" role="alert">Please give a number</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

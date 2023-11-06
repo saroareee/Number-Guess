@@ -1,0 +1,46 @@
+.alert {
+  position: relative;
+  display: inline-block;
+}
+.alert::after {
+  position: absolute;
+  top: 32%;
+  right: 15px;
+  width: 2px;
+  height: 43%;
+  background: #636262;
+  content: "";
+  animation: blink 1s infinite;
+}
+/* .alert2 {
+  position: relative;
+  display: inline-block;
+}
+.alert2::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #000;
+  content: "";
+  animation: blink 1s infinite;
+} */
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sky {
+  background: url(guess1.jpeg) no-repeat;
+
+}
+.move{
+  position: absolute;
+  transform: translate(50%, 50%);
+}
